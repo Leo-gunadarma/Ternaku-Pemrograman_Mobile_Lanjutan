@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    tools:context=".LoRegActivity">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/nama_aplikasi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_png" />
+
+    <TextView
+        android:id="@+id/textViewNamaAplikasi"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center_horizontal"
+        android:text="@string/nama_aplikasi"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/tema_aplikasi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/amaranth"
+        android:gravity="center_horizontal"
+        android:text="@string/text_deskripsi_aplikasi"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNamaAplikasi" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="206dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNamaAplikasi">
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/tema_aplikasi"
+            android:fontFamily="sans-serif-black"
+            android:insetLeft="100dp"
+            android:insetRight="100dp"
+            android:text="@string/login"
+            app:cornerRadius="15dp"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/tema_aplikasi2"
+            android:fontFamily="sans-serif-black"
+            android:insetLeft="100dp"
+            android:insetRight="100dp"
+            android:text="@string/register"
+            android:textColor="@color/black"
+            app:cornerRadius="15dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">TernaKu</string>
+    <string name="nama_aplikasi">TernaKu</string>
+    <string name="text_deskripsi_aplikasi">Aplikasi kelola ternak khusus buat kamu</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email :</string>
+    <string name="password">Password :</string>
+    <string name="nama">Nama :</string>
+    <string name="hint_email">Masukan Email Anda</string>
+    <string name="hint_password">Masukan Password Anda</string>
+    <string name="hint_nama">Masukan Nama Anda</string>
+    <string name="menu_kelola_hewan">Kelola Hewan Ternak</string>
+    <string name="judul_form_tambahkan_hewan">Form Tambahkan Hewan Ternak</string>
+    <string name="nama_hewan">Nama Hewan :</string>
+    <string name="hint_nama_hewan">Contoh : Ayam,Sapi, dll</string>
+    <string name="ras_hewan">Ras Hewan :</string>
+    <string name="hint_ras_hewan">Contoh: Boiler,Angus,dll</string>
+    <string name="jenis_hewan">Jenis Hewan:</string>
+    <string name="jumlah_hewan">Jumlah Hewan</string>
+    <string name="hint_jumlah_hewan">Contoh: 10</string>
+    <string name="jadwal_makan">Jadwal Makan</string>
+    <string name="simpan">Simpan</string>
+    <string name="menu_kelola_kandang">Kelola Kandang</string>
+    <string name="menu_kelola_obat">Kelola Obat-obatan</string>
+    <string name="menu_pengaturan_profil">Pengaturan profil</string>
+    <string name="judul_form_tambahkan_kandang">Form Tambahkan Kandang</string>
+    <string name="nama_kandang">Nama Kandang:</string>
+    <string name="lokasi_kandang">Lokasi Kandang:</string>
+    <string name="luas_kandang">Luas Kandang: 50 Meter Persegi</string>
+    <string name="kapasitas_hewan">Kapasitas Hewan (Satuan Per-hewan):</string>
+    <string name="hint_nama_kandang">Contoh: Kandang Ayam</string>
+    <string name="hint_lokasi_kandang">Contoh: Sebelah Barat Kandang</string>
+    <string name="hint_kapasitas_hewan">Contoh: 25</string>
+    <string name="hint_deskripsi_obat">Contoh: Vitamin B kompleks untuk unggas yaitu mencegah dan mengobati penyakit yang disebabkankekurangan vitamin B</string>
+    <string name="deskripsi_obat">Deskripsi Obat:</string>
+    <string name="peraturan_obat">Penggunaan Obat Sudah Disetujui Sesuai Peraturan Yang Dibuat Oleh Pemerintah</string>
+    <string name="nama_obat">Nama Obat:</string>
+    <string name="detail_data_hewan">Detail Data Hewan Ternak</string>
+    <string name="tes">Tes</string>
+    <string name="detail_data_kandang">Detail Data Kandang</string>
+    <string name="luas_kandang_without_50">Luas Kandang:</string>
+    <string name="kapasitas_hewan_without_detail">Kapasitas Hewan:</string>
+    <string name="detail_data_obat">Detail Data Obat</string>
+    <string name="jumlah_obat">Jumlah Obat:</string>
+    <string-array name="jenis_hewan">
+        <item>Jenis Hewan</item>
+        <item>Ovipar (Bertelur)</item>
+        <item>Vivipar (Malahirkan)</item>
+        <item>Ovovivipar (Bertelur dan Melahirkan)</item>
+    </string-array>
+</resources>

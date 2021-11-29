@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5cb0608e-a86c-46a1-8341-92971d5fdf5e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/DetailHewanActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/DetailKandangActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/DetailObatActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/costum_ic_delete.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/costum_ic_detail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/costum_ic_edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_delete.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_detail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail_hewan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail_kandang.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail_obat.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaHewanActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaHewanActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaHewanAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaHewanAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaKandangActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaKandangActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaKandangAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaKandangAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaObatActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaObatActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaObatAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaObatAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/TambahHewanActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/TambahHewanActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/TambahKandangActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/TambahKandangActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/TambahObatActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/TambahObatActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/database/DaoHewan.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/database/DaoHewan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/database/TabelHewan.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/database/TabelHewan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/database/TabelKandang.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/database/TabelKandang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/database/TabelObat.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/database/TabelObat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tambah_hewan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tambah_hewan.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tambah_obat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tambah_obat.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_hewan_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_hewan_view.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_kandang_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_kandang_view.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_obat_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_obat_view.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[D:\AndroidAvd\.android\avd\Pixel_2_1.avd]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="resourceFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="209AOnGHlnqZy0NHhhMkIEFMAN3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.-1416375261">
+      <recent name="id.leo.ternaku" />
+    </key>
+    <key name="android.template.-1099890811">
+      <recent name="id.leo.ternaku" />
+    </key>
+    <key name="android.template.1909472161">
+      <recent name="id.leo.ternaku" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Ternaku.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5cb0608e-a86c-46a1-8341-92971d5fdf5e" name="Default Changelist" comment="" />
+      <created>1635446400282</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635446400282</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Logo dan background">
+      <created>1635449005538</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1635449005538</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Logo Aplikasi">
+      <created>1635450988937</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1635450988937</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Logo Aplikasi">
+      <created>1635654428090</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1635654428090</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Launcher Background">
+      <created>1635654538980</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1635654538980</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Menu kelola hewan">
+      <created>1635662441791</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1635662441791</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Forget to add padding">
+      <created>1635662502247</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1635662502247</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Menambahkan tombol-tombol menu">
+      <created>1635666616445</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1635666616445</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Menambahkan tombol-tombol menu">
+      <created>1635666764341</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1635666764341</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Menambahkan view semua menu kecuali pengaturan">
+      <created>1636135676875</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1636135676875</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Konfigurasi Room dan Pembuatan Database">
+      <created>1636503071682</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1636503071682</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Memperbaiki Modul 1 dan Modul 3">
+      <created>1636507421224</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1636507421224</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Logo dan background" />
+    <MESSAGE value="Logo Aplikasi" />
+    <MESSAGE value="Launcher Background" />
+    <MESSAGE value="Menu kelola hewan" />
+    <MESSAGE value="Forget to add padding" />
+    <MESSAGE value="Menambahkan tombol-tombol menu" />
+    <MESSAGE value="Menambahkan view semua menu kecuali pengaturan" />
+    <MESSAGE value="Konfigurasi Room dan Pembuatan Database" />
+    <MESSAGE value="Memperbaiki Modul 1 dan Modul 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Memperbaiki Modul 1 dan Modul 3" />
+  </component>
+</project>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.leo.ternaku">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ternaku">
+        <activity
+            android:name=".DetailObatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailKandangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailHewanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TambahObatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KelolaObatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TambahKandangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KelolaKandangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TambahHewanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KelolaHewanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoRegActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

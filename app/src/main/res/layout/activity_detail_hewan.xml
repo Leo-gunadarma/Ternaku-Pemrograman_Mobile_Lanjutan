@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    tools:context=".DetailHewanActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/textViewDetailHewan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:text="@string/detail_data_hewan"
+                android:textColor="@color/tema_aplikasi"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewDetailNamaHewan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/amaranth"
+                android:text="@string/nama_hewan"
+                android:textColor="@color/tema_aplikasi3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDetailHewan" />
+
+            <TextView
+                android:id="@+id/textViewDetailRasHewan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/amaranth"
+                android:text="@string/ras_hewan"
+                android:textColor="@color/tema_aplikasi3"
+                app:layout_constraintStart_toStartOf="@+id/textViewDetailNamaHewan"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDetailNamaHewan" />
+
+            <TextView
+                android:id="@+id/textViewDetailJenisHewan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/amaranth"
+                android:text="@string/jenis_hewan"
+                android:textColor="@color/tema_aplikasi3"
+                app:layout_constraintStart_toStartOf="@+id/textViewDetailRasHewan"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDetailRasHewan" />
+
+            <TextView
+                android:id="@+id/textViewDetailJumlahHewan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/amaranth"
+                android:text="@string/jumlah_hewan"
+                android:textColor="@color/tema_aplikasi3"
+                app:layout_constraintStart_toStartOf="@+id/textViewDetailJenisHewan"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDetailJenisHewan" />
+
+            <TextView
+                android:id="@+id/textViewDetailJadwalMakan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/amaranth"
+                android:text="@string/jadwal_makan"
+                android:textColor="@color/tema_aplikasi3"
+                app:layout_constraintStart_toStartOf="@+id/textViewDetailJumlahHewan"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDetailJumlahHewan" />
+
+            <TextView
+                android:id="@+id/textViewResultNamaHewan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:fontFamily="@font/amaranth"
+                android:text="@string/tes"
+                android:textColor="@color/tema_aplikasi3"
+                app:layout_constraintStart_toEndOf="@+id/textViewDetailNamaHewan"
+                app:layout_constraintTop_toTopOf="@+id/textViewDetailNamaHewan" />
+
+            <TextView
+                android:id="@+id/textViewResultRasHewan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
+                android:text="@string/tes"
+                android:textColor="@color/tema_aplikasi3"
+                app:layout_constraintStart_toStartOf="@+id/textViewResultNamaHewan"
+                app:layout_constraintTop_toTopOf="@+id/textViewDetailRasHewan" />
+
+            <TextView
+                android:id="@+id/textViewResultJenisHewan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
+                android:text="@string/tes"
+                android:textColor="@color/tema_aplikasi3"
+                app:layout_constraintStart_toStartOf="@+id/textViewResultRasHewan"
+                app:layout_constraintTop_toTopOf="@+id/textViewDetailJenisHewan" />
+
+            <TextView
+                android:id="@+id/textViewResultJumlahHewan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
+                android:text="@string/tes"
+                android:textColor="@color/tema_aplikasi3"
+                app:layout_constraintStart_toStartOf="@+id/textViewResultJenisHewan"
+                app:layout_constraintTop_toTopOf="@+id/textViewDetailJumlahHewan" />
+
+            <TextView
+                android:id="@+id/textViewResultJadwalMakan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
+                android:text="@string/tes"
+                android:textColor="@color/tema_aplikasi3"
+                app:layout_constraintStart_toStartOf="@+id/textViewResultJumlahHewan"
+                app:layout_constraintTop_toTopOf="@+id/textViewDetailJadwalMakan" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

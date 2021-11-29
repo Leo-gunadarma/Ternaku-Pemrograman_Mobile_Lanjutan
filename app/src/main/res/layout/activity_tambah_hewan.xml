@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    tools:context=".TambahHewanActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewJudulFormTambahHewan"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center"
+            android:text="@string/judul_form_tambahkan_hewan"
+            android:textColor="@color/tema_aplikasi"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewNamaHewan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nama_hewan"
+                android:fontFamily="@font/amaranth"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextNamaHewan"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/hint_nama_hewan"
+                android:background="@drawable/input_box"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewRasHewan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
+                android:paddingStart="10dp"
+                android:text="@string/ras_hewan"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextRasHewan"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/input_box"
+                android:ems="10"
+                android:hint="@string/hint_ras_hewan"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewJenisHewan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
+                android:paddingStart="10dp"
+                android:text="@string/jenis_hewan"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/input_box">
+
+                <Spinner
+                    android:id="@+id/spinnerJenisHewan"
+                    android:layout_width="285dp"
+                    android:layout_height="61dp"
+                    android:backgroundTintMode="add"
+                    android:entries="@array/jenis_hewan" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewJumlahHewan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
+                android:paddingStart="10dp"
+                android:text="@string/jumlah_hewan"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextJumlahHewan"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/input_box"
+                android:ems="10"
+                android:hint="@string/hint_jumlah_hewan"
+                android:inputType="number"
+                android:paddingStart="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
+                android:paddingStart="10dp"
+                android:text="@string/jadwal_makan"
+                android:textColor="@color/black"
+                android:textSize="16sp" /> />
+
+            <RadioGroup
+                android:id="@+id/radioGroupJadwalMakan"
+                android:layout_width="258dp"
+                android:layout_height="163dp"
+                android:background="@drawable/input_box"
+                android:layout_gravity="center_horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonPagiSiang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pagi - Siang" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonSiangSore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Siang - Sore" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonPagiSore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pagi - Sore" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/simpan"
+            app:icon="@drawable/ic_simpan"
+            app:iconGravity="textEnd" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
