@@ -5,53 +5,25 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cb0608e-a86c-46a1-8341-92971d5fdf5e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/DetailHewanActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/DetailKandangActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/DetailObatActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/costum_ic_delete.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/costum_ic_detail.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/costum_ic_edit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_delete.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_detail.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_edit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail_hewan.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail_kandang.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail_obat.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaHewanActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaHewanActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaHewanAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaHewanAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaKandangActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaKandangActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaKandangAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaKandangAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaObatActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaObatActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaObatAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaObatAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/TambahHewanActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/TambahHewanActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/TambahKandangActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/TambahKandangActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/TambahObatActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/TambahObatActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/database/DaoHewan.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/database/DaoHewan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/database/TabelHewan.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/database/TabelHewan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/database/TabelKandang.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/database/TabelKandang.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/database/TabelObat.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/database/TabelObat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tambah_hewan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tambah_hewan.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tambah_obat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tambah_obat.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_hewan_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_hewan_view.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_kandang_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_kandang_view.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_obat_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_obat_view.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[D:\AndroidAvd\.android\avd\Pixel_2_1.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[D:\AndroidAvd\.android\avd\Nexus_5_API_30.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -80,7 +52,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Pratikum Mobile/Finishing/Ternaku" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">

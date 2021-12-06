@@ -8,92 +8,129 @@
     tools:context=".MainActivity">
 
 
-    <ImageView
-        android:id="@+id/imageViewKelolaHewan"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="80dp"
-        android:background="@drawable/border_kotak"
-        android:padding="1dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/banyak_hewan" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textViewMenuKelolaHewan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/menu_kelola_hewan"
-        android:fontFamily="@font/amaranth"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/imageViewKelolaHewan"
-        app:layout_constraintStart_toStartOf="@+id/imageViewKelolaHewan"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewKelolaHewan" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/imageViewKelolaKandang"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="72dp"
-        android:background="@drawable/border_kotak"
-        android:padding="1dp"
-        app:layout_constraintStart_toEndOf="@+id/imageViewKelolaHewan"
-        app:layout_constraintTop_toTopOf="@+id/imageViewKelolaHewan"
-        app:srcCompat="@drawable/kandang" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/textViewMenuKelolaKandang"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/menu_kelola_kandang"
-        android:fontFamily="@font/amaranth"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/imageViewKelolaKandang"
-        app:layout_constraintStart_toStartOf="@+id/imageViewKelolaKandang"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewKelolaKandang" />
+                <LinearLayout
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/imageViewMenuKelolaObat"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="100dp"
-        android:background="@drawable/border_kotak"
-        android:padding="1dp"
-        app:layout_constraintStart_toStartOf="@+id/imageViewKelolaHewan"
-        app:layout_constraintTop_toBottomOf="@+id/textViewMenuKelolaHewan"
-        app:srcCompat="@drawable/medickit" />
+                    <ImageView
+                        android:id="@+id/imageViewKelolaHewan"
+                        android:layout_width="100dp"
+                        android:layout_height="101dp"
 
-    <TextView
-        android:id="@+id/textViewMenuKelolaObat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/menu_kelola_obat"
-        android:fontFamily="@font/amaranth"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/imageViewMenuKelolaObat"
-        app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toStartOf="@+id/imageViewMenuKelolaObat"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewMenuKelolaObat" />
+                        android:background="@drawable/border_kotak"
+                        android:padding="1dp"
+                        app:srcCompat="@drawable/banyak_hewan" />
 
-    <ImageView
-        android:id="@+id/imageViewMenuPengaturanProfil"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@drawable/border_kotak"
-        android:padding="1dp"
-        app:layout_constraintStart_toStartOf="@+id/imageViewKelolaKandang"
-        app:layout_constraintTop_toTopOf="@+id/imageViewMenuKelolaObat"
-        app:srcCompat="@drawable/pengaturan_profil" />
+                    <TextView
+                        android:id="@+id/textViewMenuKelolaHewan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/amaranth"
+                        android:text="@string/menu_kelola_hewan"
+                        android:textColor="#000000" />
+                </LinearLayout>
 
-    <TextView
-        android:id="@+id/textViewPengaturanProfil"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/menu_pengaturan_profil"
-        android:fontFamily="@font/amaranth"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/imageViewMenuPengaturanProfil"
-        app:layout_constraintStart_toStartOf="@+id/imageViewMenuPengaturanProfil"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewMenuPengaturanProfil" />
+                <LinearLayout
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageViewKelolaKandang"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/border_kotak"
+                        android:padding="1dp"
+                        app:srcCompat="@drawable/kandang" />
+
+                    <TextView
+                        android:id="@+id/textViewMenuKelolaKandang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/amaranth"
+                        android:text="@string/menu_kelola_kandang"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageViewMenuKelolaObat"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/border_kotak"
+                        android:padding="1dp"
+                        app:srcCompat="@drawable/medickit" />
+
+                    <TextView
+                        android:id="@+id/textViewMenuKelolaObat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/amaranth"
+                        android:text="@string/menu_kelola_obat"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageViewMenuPengaturanProfil"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/border_kotak"
+                        android:padding="1dp"
+                        app:srcCompat="@drawable/pengaturan_profil" />
+
+                    <TextView
+                        android:id="@+id/textViewPengaturanProfil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/amaranth"
+                        android:text="@string/menu_pengaturan_profil"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
