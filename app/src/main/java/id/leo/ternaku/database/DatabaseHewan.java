@@ -6,7 +6,7 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-@Database(entities = {TabelHewan.class , TabelKandang.class, TabelObat.class} ,version = 1)
+@Database(entities = {TabelHewan.class , TabelKandang.class, TabelObat.class, TabelPengguna.class} ,version = 1)
 public abstract class DatabaseHewan extends RoomDatabase {
     public abstract DaoHewan daoHewan();
     private static DatabaseHewan INSTANCE;

@@ -7,8 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import id.leo.ternaku.helper.SessionManagement;
+
 public class LoRegActivity extends AppCompatActivity {
     Button tombolLogin, tombolRegister;
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        SessionManagement session = new SessionManagement(this);
+        if(session.statusLogin()){
+            Intent mainIntent = new Intent(LoRegActivity.this, MainActivity.class);
+            startActivity(mainIntent);
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

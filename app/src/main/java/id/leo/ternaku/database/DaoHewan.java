@@ -46,4 +46,19 @@ public interface DaoHewan {
 
     @Query("SELECT * FROM tb_obat ")
     List<TabelObat> getAllDataObat();
+
+    @Insert (onConflict = OnConflictStrategy.REPLACE)
+    void insertDataPengguna (TabelPengguna ... tabelPenggunas);
+
+    @Update
+    void updatePengguna (TabelPengguna tabelPengguna);
+
+    @Delete
+    void deletePengguna(TabelPengguna tabelPengguna);
+
+    @Query("SELECT * FROM tb_pengguna")
+    List<TabelPengguna> getAllDataPengguna();
+
+    @Query("SELECT * FROM tb_pengguna WHERE email_pengguna=:email AND password_pengguna=:password")
+    List<TabelPengguna> loginPengguna(String email, String password);
 }

@@ -43,6 +43,10 @@
     <string name="kapasitas_hewan_without_detail">Kapasitas Hewan:</string>
     <string name="detail_data_obat">Detail Data Obat</string>
     <string name="jumlah_obat">Jumlah Obat:</string>
+    <string name="alamat">Alamat</string>
+    <string name="no_telp">No Telp</string>
+    <string name="hint_alamat">Masukan Alamat Anda</string>
+    <string name="hint_no_telp">08xxxxxxxxxx</string>
     <string-array name="jenis_hewan">
         <item>Jenis Hewan</item>
         <item>Ovipar (Bertelur)</item>
