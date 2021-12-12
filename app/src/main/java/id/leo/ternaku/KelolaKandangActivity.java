@@ -1,5 +1,6 @@
 package id.leo.ternaku;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -34,75 +35,7 @@ public class KelolaKandangActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerViewKelolaKandang);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        dataListKandang = database.daoHewan().getAllDataKandang();
-        adapter = new KelolaKandangAdapter(dataListKandang);
-        recyclerView.setAdapter(adapter);
-
-        adapter.setListenerAdapterKandang(new KelolaKandangAdapter.onItemClickListenerAdapterKandang() {
-            @Override
-            public void onItemDetailClick(int position) {
-                Intent detail = new Intent(KelolaKandangActivity.this,DetailKandangActivity.class);
-                detail.putExtra("nama_kandang", dataListKandang.get(position).getNamaKandang());
-                detail.putExtra("lokasi_kandang", dataListKandang.get(position).getLokasiKandang());
-                detail.putExtra("luas_kandang", ""+ dataListKandang.get(position).getLuasKandang()+" Meter Persegi");
-                detail.putExtra("kapasitas_kandang", ""+dataListKandang.get(position).getKapasitasKandang()+" Ekor");
-                startActivity(detail);
-
-            }
-
-            @Override
-            public void onItemUpdateClick(int position) {
-                Intent edit = new Intent(KelolaKandangActivity.this,TambahKandangActivity.class);
-                edit.putExtra("id_kandang",""+dataListKandang.get(position).getId());
-                edit.putExtra("nama_kandang", dataListKandang.get(position).getNamaKandang());
-                edit.putExtra("lokasi_kandang", dataListKandang.get(position).getLokasiKandang());
-                edit.putExtra("luas_kandang", ""+ dataListKandang.get(position).getLuasKandang());
-                edit.putExtra("kapasitas_kandang", ""+dataListKandang.get(position).getKapasitasKandang());
-                startActivity(edit);
-            }
-
-            @Override
-            public void onItemDeleteClick(int position) {
-                AlertDialog.Builder deleteMsg = new AlertDialog.Builder(KelolaKandangActivity.this);
-                deleteMsg.setTitle("Apakah anda yakin ingin menghapus data?");
-                deleteMsg.setMessage("Anda akan menghapus data \""+dataListKandang.get(position).getNamaKandang()+ "\" \n"+
-                        "Tekan tombol ok jika anda yakin");
-                deleteMsg.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        database.daoHewan().deleteKandang(dataListKandang.get(position));
-                        dataListKandang.remove(position);
-                        adapter.notifyItemRemoved(position);
-                        adapter.notifyItemRangeRemoved(position, dataListKandang.size());
-                        Toast.makeText(KelolaKandangActivity.this, "Data Berhasil Dihapus", Toast.LENGTH_SHORT).show();
-                    }
-                });
-
-                deleteMsg.setNeutralButton("Tidak", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.dismiss();
-                    }
-                });
-                deleteMsg.show();
-
-            }
-        });
-
-
-        if (getIntent().getExtras()!= null){
-            Intent hasil = getIntent();
-            AlertDialog.Builder succesMsg = new AlertDialog.Builder(KelolaKandangActivity.this);
-            succesMsg.setTitle("Inputan Berhasil");
-            succesMsg.setMessage("Anda berhasil memasukan kandang \""+hasil.getStringExtra("nama_kandang")+ "\" dalam menu kelola kandang");
-            succesMsg.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialogInterface, int i) {
-                    dialogInterface.dismiss();
-                }
-            });
-            succesMsg.show();
-        }
+        showData();
 
 
         addButton = findViewById(R.id.addButtonKandang);
@@ -115,14 +48,44 @@ public class KelolaKandangActivity extends AppCompatActivity {
     }
     public void tambahData(){
         Intent intent= new Intent(KelolaKandangActivity.this , TambahKandangActivity.class);
-        startActivity(intent);
+        startActivityForResult(intent, 1);
+    }
+
+    public void showData(){
+        dataListKandang = database.daoHewan().getAllDataKandang();
+        adapter = new KelolaKandangAdapter(KelolaKandangActivity.this, dataListKandang);
+        recyclerView.setAdapter(adapter);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        showData();
     }
 
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Intent intent= new Intent(KelolaKandangActivity.this , MainActivity.class);
-        startActivity(intent);
         finish();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 1){
+            if(resultCode == RESULT_OK){
+                String hasil = data.getStringExtra("nama_kandang");
+                AlertDialog.Builder succesMsg = new AlertDialog.Builder(KelolaKandangActivity.this);
+                succesMsg.setTitle("Inputan Berhasil");
+                succesMsg.setMessage("Anda berhasil memasukan kandang \""+hasil+ "\" dalam menu kelola kandang");
+                succesMsg.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.dismiss();
+                    }
+                });
+                succesMsg.show();
+            }
+        }
     }
 }

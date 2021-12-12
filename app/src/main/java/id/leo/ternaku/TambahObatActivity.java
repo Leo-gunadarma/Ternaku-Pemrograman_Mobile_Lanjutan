@@ -3,10 +3,12 @@ package id.leo.ternaku;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -88,7 +90,7 @@ public class TambahObatActivity extends AppCompatActivity {
         }
         AlertDialog.Builder infoMsg = new AlertDialog.Builder(TambahObatActivity.this);
         infoMsg.setTitle("Apakah Anda Yakin?");
-        infoMsg.setMessage("Apakah anda yakin ingin menginputkan data sebagai berikut?\n\n"+"" +
+        infoMsg.setMessage("Apakah anda yakin ingin memperbaharui data sebagai berikut?\n\n"+"" +
                 "Nama Obat: " + namaObat.getText().toString() +"\n"+
                 "Jumlah Obat: "+ jumlahObat.getText().toString() + "\n"+
                 "Deskripsi Obat: "+ deskripsiObat.getText().toString() + "\n");
@@ -103,8 +105,8 @@ public class TambahObatActivity extends AppCompatActivity {
                 TabelObat row = new TabelObat(nmaObat,finalJmlhObat,dskObat,prtrnObat);
                 row.setId(id_obat);
                 database.daoHewan().updateObat(row);
-                Intent intent = new Intent(TambahObatActivity.this, KelolaObatActivity.class);
-                startActivity(intent);
+//                Intent intent = new Intent(TambahObatActivity.this, KelolaObatActivity.class);
+//                startActivity(intent);
                 finish();
             }
         });
@@ -140,6 +142,7 @@ public class TambahObatActivity extends AppCompatActivity {
             toast.show();
             return;
         }
+        hideSoftKeyboard(TambahObatActivity.this);
         AlertDialog.Builder infoMsg = new AlertDialog.Builder(TambahObatActivity.this);
         infoMsg.setTitle("Apakah Anda Yakin?");
         infoMsg.setMessage("Apakah anda yakin ingin menginputkan data sebagai berikut?\n\n"+"" +
@@ -154,11 +157,13 @@ public class TambahObatActivity extends AppCompatActivity {
                 String dskObat = deskripsiObat.getText().toString();
                 int finalJmlhObat = Integer.parseInt(jmlhObat);
                 String prtrnObat = "True";
+
                 TabelObat row = new TabelObat(nmaObat,finalJmlhObat,dskObat,prtrnObat);
                 database.daoHewan().insertDataObat(row);
-                Intent intent = new Intent(TambahObatActivity.this, KelolaObatActivity.class);
-                intent.putExtra("nama_obat", nmaObat);
-                startActivity(intent);
+
+                Intent resultIntent = new Intent();
+                resultIntent.putExtra("nama_obat", nmaObat);
+                setResult(RESULT_OK, resultIntent);
                 finish();
             }
         });
@@ -197,6 +202,18 @@ public class TambahObatActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         Toast.makeText(this, "Kembali ke menu kelola hewan", Toast.LENGTH_SHORT).show();
+    }
+
+    public static void hideSoftKeyboard(Activity activity) {
+        InputMethodManager inputMethodManager =
+                (InputMethodManager) activity.getSystemService(
+                        Activity.INPUT_METHOD_SERVICE);
+        if(inputMethodManager.isAcceptingText()){
+            inputMethodManager.hideSoftInputFromWindow(
+                    activity.getCurrentFocus().getWindowToken(),
+                    0
+            );
+        }
     }
 
 }

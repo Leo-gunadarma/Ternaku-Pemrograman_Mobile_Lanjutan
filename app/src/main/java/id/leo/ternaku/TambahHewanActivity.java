@@ -145,8 +145,8 @@ public class TambahHewanActivity extends AppCompatActivity {
                 TabelHewan row = new TabelHewan(nmHwn,rsHwn,jnsHwn,finalJmlhHwn,jadwalMakan);
                 row.setId(id_hewan);
                 database.daoHewan().updateHewan(row);
-                Intent intent = new Intent(TambahHewanActivity.this, KelolaHewanActivity.class);
-                startActivity(intent);
+//                Intent intent = new Intent(TambahHewanActivity.this, KelolaHewanActivity.class);
+//                startActivity(intent);
                 finish();
             }
         });
@@ -212,9 +212,14 @@ public class TambahHewanActivity extends AppCompatActivity {
                 String jadwalMakan = selected.getText().toString();
                 TabelHewan row = new TabelHewan(nmHwn,rsHwn,jnsHwn,finalJmlhHwn,jadwalMakan);
                 database.daoHewan().insertDataHewan(row);
-                Intent intent = new Intent(TambahHewanActivity.this, KelolaHewanActivity.class);
-                intent.putExtra("nama_hewan", nmHwn);
-                startActivity(intent);
+
+                Intent resultIntent = new Intent();
+                resultIntent.putExtra("nama_hewan", nmHwn);
+                setResult(RESULT_OK, resultIntent);
+
+//                Intent intent = new Intent(TambahHewanActivity.this, KelolaHewanActivity.class);
+//                intent.putExtra("nama_hewan", nmHwn);
+//                startActivity(intent);
                 finish();
             }
         });

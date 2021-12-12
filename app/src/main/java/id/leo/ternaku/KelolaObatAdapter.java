@@ -1,51 +1,98 @@
 package id.leo.ternaku;
 
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import id.leo.ternaku.database.DatabaseHewan;
 import id.leo.ternaku.database.TabelObat;
 
 public class KelolaObatAdapter extends RecyclerView.Adapter<KelolaObatAdapter.viewHolder> {
 
+    private DatabaseHewan database;
+    private Context context;
     List<TabelObat> dataObat = new ArrayList<>();
-    private onItemClickListenerAdapterObat listenerAdapterObat;
-    public KelolaObatAdapter(List<TabelObat> dataObat) {
+
+    public KelolaObatAdapter(Context context, List<TabelObat> dataObat) {
+        this.context = context;
         this.dataObat = dataObat;
-    }
-
-
-    public void setListenerAdapterObat(onItemClickListenerAdapterObat listenerAdapterObat) {
-        this.listenerAdapterObat = listenerAdapterObat;
-    }
-
-    public interface onItemClickListenerAdapterObat{
-        void onItemDetailClick(int position);
-        void onItemUpdateClick(int position);
-        void onItemDeleteClick(int position);
     }
 
 
     @NonNull
     @Override
     public viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_obat_view,parent,false);
-        return new viewHolder(view, listenerAdapterObat);
+        View view = LayoutInflater.from(context).inflate(R.layout.item_obat_view,parent,false);
+        return new viewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull viewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull viewHolder holder, @SuppressLint("RecyclerView") int position) {
         holder.namaObat.setText(dataObat.get(position).getNamaObat());
         holder.jumlahObat.setText("Jumlah Obat: "+dataObat.get(position).getJumlahObat());
+        database = DatabaseHewan.getDbInstance(context);
+        holder.detail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent detail = new Intent(context, DetailObatActivity.class);
+                detail.putExtra("nama_obat", dataObat.get(position).getNamaObat());
+                detail.putExtra("jumlah_obat", ""+ dataObat.get(position).getJumlahObat());
+                detail.putExtra("deskripsi_obat", dataObat.get(position).getDeskripsiObat());
+                context.startActivity(detail);
+            }
+        });
+        holder.edit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent edit = new Intent(context,TambahObatActivity.class);
+                edit.putExtra("id_obat", ""+dataObat.get(position).getId());
+                edit.putExtra("nama_obat", dataObat.get(position).getNamaObat());
+                edit.putExtra("jumlah_obat", ""+ dataObat.get(position).getJumlahObat());
+                edit.putExtra("deskripsi_obat", dataObat.get(position).getDeskripsiObat());
+                context.startActivity(edit);
+            }
+        });
+        holder.delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder deleteMsg = new AlertDialog.Builder(context);
+                deleteMsg.setTitle("Apakah anda yakin ingin menghapus data?");
+                deleteMsg.setMessage("Anda akan menghapus data \""+dataObat.get(position).getNamaObat()+ "\" \n"+
+                        "Tekan tombol ok jika anda yakin");
+                deleteMsg.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        database.daoHewan().deleteObat(dataObat.get(position));
+                        dataObat.remove(position);
+                        notifyItemRemoved(position);
+                        notifyItemRangeRemoved(position, dataObat.size());
+                        Toast.makeText(context, "Data Berhasil Dihapus", Toast.LENGTH_SHORT).show();
+                    }
+                });
+
+                deleteMsg.setNeutralButton("Tidak", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.dismiss();
+                    }
+                });
+                deleteMsg.show();
+            }
+        });
     }
 
     @Override
@@ -56,7 +103,7 @@ public class KelolaObatAdapter extends RecyclerView.Adapter<KelolaObatAdapter.vi
     public class viewHolder extends RecyclerView.ViewHolder{
         private TextView namaObat,jumlahObat;
         private ImageView edit,delete,detail;
-        public viewHolder(@NonNull View itemView, onItemClickListenerAdapterObat listener) {
+        public viewHolder(@NonNull View itemView) {
             super(itemView);
             namaObat = itemView.findViewById(R.id.textViewNamaObatAdapter);
             jumlahObat = itemView.findViewById(R.id.textViewJumlahObatAdapter);
@@ -64,42 +111,6 @@ public class KelolaObatAdapter extends RecyclerView.Adapter<KelolaObatAdapter.vi
             edit = itemView.findViewById(R.id.imageViewEditObat);
             delete = itemView.findViewById(R.id.imageViewDeleteObat);
             detail = itemView.findViewById(R.id.imageViewDetailObat);
-
-            detail.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    if (listener!= null){
-                        int position = getAdapterPosition();
-                        if (position!= RecyclerView.NO_POSITION){
-                            listener.onItemDetailClick(position);
-                        }
-                    }
-                }
-            });
-
-            delete.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    if (listener!= null){
-                        int position = getAdapterPosition();
-                        if (position!= RecyclerView.NO_POSITION){
-                            listener.onItemDeleteClick(position);
-                        }
-                    }
-                }
-            });
-
-            edit.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    if (listener!= null){
-                        int position = getAdapterPosition();
-                        if (position!= RecyclerView.NO_POSITION){
-                            listener.onItemUpdateClick(position);
-                        }
-                    }
-                }
-            });
         }
     }
 }

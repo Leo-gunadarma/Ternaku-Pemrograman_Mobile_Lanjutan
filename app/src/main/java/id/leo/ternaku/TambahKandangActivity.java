@@ -109,7 +109,7 @@ public class TambahKandangActivity extends AppCompatActivity {
 
         AlertDialog.Builder infoMsg = new AlertDialog.Builder(TambahKandangActivity.this);
         infoMsg.setTitle("Apakah Anda Yakin?");
-        infoMsg.setMessage("Apakah anda yakin ingin mmemperbarui data sebagai berikut?\n\n"+"" +
+        infoMsg.setMessage("Apakah anda yakin ingin memperbarui data sebagai berikut?\n\n"+"" +
                 "Nama Kandang: " + namaKandang.getText().toString() +"\n"+
                 "Lokasi Kandang: " + lokasiKandang.getText().toString() +"\n"+
                 "Luas Kandang: " + luasKandangValue + " Meter Persegi \n"+
@@ -124,8 +124,8 @@ public class TambahKandangActivity extends AppCompatActivity {
                 TabelKandang row = new TabelKandang(nmKndang,lksKndang,luasKandangValue,finalkpsKndang);
                 row.setId(id_kandang);
                 database.daoHewan().updateKandang(row);
-                Intent intent = new Intent(TambahKandangActivity.this, KelolaKandangActivity.class);
-                startActivity(intent);
+//                Intent intent = new Intent(TambahKandangActivity.this, KelolaKandangActivity.class);
+//                startActivity(intent);
                 finish();
             }
         });
@@ -179,9 +179,14 @@ public class TambahKandangActivity extends AppCompatActivity {
                 int finalkpsKndang = Integer.parseInt(kpsKndang);
                 TabelKandang row = new TabelKandang(nmKndang,lksKndang,luasKandangValue,finalkpsKndang);
                 database.daoHewan().insertDataKandang(row);
-                Intent intent = new Intent(TambahKandangActivity.this, KelolaKandangActivity.class);
-                intent.putExtra("nama_kandang", nmKndang);
-                startActivity(intent);
+
+                Intent resultIntent = new Intent();
+                resultIntent.putExtra("nama_kandang", nmKndang);
+                setResult(RESULT_OK, resultIntent);
+
+//                Intent intent = new Intent(TambahKandangActivity.this, KelolaKandangActivity.class);
+//                intent.putExtra("nama_kandang", nmKndang);
+//                startActivity(intent);
                 finish();
             }
         });
