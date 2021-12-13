@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ternaku">
         <activity
+            android:name=".EditProfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilActivity"
+            android:exported="false" />
+        <activity
             android:name=".DetailObatActivity"
             android:exported="false" />
         <activity

@@ -13,19 +13,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cb0608e-a86c-46a1-8341-92971d5fdf5e" name="Default Changelist" comment="Memperbaiki Bug Aplikasi">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/database/TabelPengguna.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/helper/SessionManagement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/EditProfilActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/ProfilActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_profil.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_profil.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Ternaku.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Ternaku.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/LoRegActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/LoRegActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/RegisterActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/RegisterActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/database/DaoHewan.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/database/DaoHewan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/database/DatabaseHewan.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/database/DatabaseHewan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,11 +68,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="E:/Kuliah/Tugas Kuliah/SMT 4/Pemrograman Mobile/Project Android/SerahTerimaPembayaran" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.-1416375261">
+      <recent name="id.leo.ternaku" />
+    </key>
+    <key name="android.template.847724455">
       <recent name="id.leo.ternaku" />
     </key>
     <key name="android.template.-1099890811">

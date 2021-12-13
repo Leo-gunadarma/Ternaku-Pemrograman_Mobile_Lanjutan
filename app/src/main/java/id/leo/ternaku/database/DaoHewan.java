@@ -50,8 +50,8 @@ public interface DaoHewan {
     @Insert (onConflict = OnConflictStrategy.REPLACE)
     void insertDataPengguna (TabelPengguna ... tabelPenggunas);
 
-    @Update
-    void updatePengguna (TabelPengguna tabelPengguna);
+    @Query("UPDATE tb_pengguna SET nama_pengguna=:nama, email_pengguna=:email, alamat_pengguna=:alamat, no_telp_pengguna=:telp WHERE id=:id")
+    void updatePengguna(int id, String nama, String email, String alamat, String telp);
 
     @Delete
     void deletePengguna(TabelPengguna tabelPengguna);
@@ -61,4 +61,7 @@ public interface DaoHewan {
 
     @Query("SELECT * FROM tb_pengguna WHERE email_pengguna=:email AND password_pengguna=:password")
     List<TabelPengguna> loginPengguna(String email, String password);
+
+    @Query("SELECT * FROM tb_pengguna WHERE id=:id")
+    List<TabelPengguna> selectPengguna(int id);
 }

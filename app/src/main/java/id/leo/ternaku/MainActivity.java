@@ -75,8 +75,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void menuPengaturanProfil(){
-        Toast toast = Toast.makeText(this, "Menu dalam pembuatan", Toast.LENGTH_LONG);
-        toast.show();
+        Intent intent = new Intent(MainActivity.this, ProfilActivity.class);
+        startActivity(intent);
     }
 
     @Override
