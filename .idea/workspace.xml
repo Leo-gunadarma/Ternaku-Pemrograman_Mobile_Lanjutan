@@ -12,7 +12,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cb0608e-a86c-46a1-8341-92971d5fdf5e" name="Default Changelist" comment="Memperbaiki Bug Aplikasi">
+    <list default="true" id="5cb0608e-a86c-46a1-8341-92971d5fdf5e" name="Default Changelist" comment="Update Pengaturan Profile">
       <change afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/EditProfilActivity.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/ProfilActivity.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_profil.xml" afterDir="false" />
@@ -238,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639335581453</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Update Pengaturan Profile">
+      <created>1639382765844</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1639382765844</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -264,6 +271,7 @@
     <MESSAGE value="Konfigurasi Room dan Pembuatan Database" />
     <MESSAGE value="Memperbaiki Modul 1 dan Modul 3" />
     <MESSAGE value="Memperbaiki Bug Aplikasi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Memperbaiki Bug Aplikasi" />
+    <MESSAGE value="Update Pengaturan Profile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Pengaturan Profile" />
   </component>
 </project>
