@@ -14,13 +14,15 @@ import java.util.List;
 import id.leo.ternaku.database.DatabaseHewan;
 import id.leo.ternaku.database.TabelPengguna;
 import id.leo.ternaku.helper.SessionManagement;
+import id.leo.ternaku.model.UpdatePasswordModel;
 
 public class EditPassActivity extends AppCompatActivity {
 
     EditText etOldPass, etNewPass, etReNewPass;
     Button btnUp;
-    private DatabaseHewan database;
+    DatabaseHewan database;
     List<TabelPengguna> dataPengguna = new ArrayList<>();
+    int idPengguna;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +35,7 @@ public class EditPassActivity extends AppCompatActivity {
         btnUp       = findViewById(R.id.buttonUpdate);
 
         SessionManagement session = new SessionManagement(this);
-        int idPengguna = session.getId();
+        idPengguna = session.getId();
 
         database     = DatabaseHewan.getDbInstance(this);
         dataPengguna = database.daoHewan().selectPengguna(idPengguna);
@@ -41,33 +43,23 @@ public class EditPassActivity extends AppCompatActivity {
         btnUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 String OldPass   = dataPengguna.get(0).getPasswordPengguna().trim();
                 String OldPassTy = etOldPass.getText().toString().trim();
                 String NewPass   = etNewPass.getText().toString().trim();
                 String ReNewPass = etReNewPass.getText().toString().trim();
 
-                if(OldPassTy.isEmpty() || NewPass.isEmpty() || ReNewPass.isEmpty()){
-                    Toast.makeText(EditPassActivity.this, "Lengkapi Data Terlebih Dahulu!", Toast.LENGTH_SHORT).show();
-                }else{
-                    if(OldPassTy.equals(OldPass)){
-                        if(NewPass.equals(ReNewPass)){
-                            if(OldPass.equals(NewPass)){
-                                Toast.makeText(EditPassActivity.this, "Password Lama dan Password Baru Sama!", Toast.LENGTH_SHORT).show();
-                            }else{
-                                database.daoHewan().updatePass(idPengguna,NewPass);
-                                Toast.makeText(EditPassActivity.this, "Password Berhasil Diubah!",Toast.LENGTH_SHORT).show();
-                                finish();
-                            }
-                        }else{
-                            Toast.makeText(EditPassActivity.this, "Password Baru Tidak Valid!", Toast.LENGTH_SHORT).show();
-                        }
-                    }else{
-                        Toast.makeText(EditPassActivity.this, "Password Lama Salah!"+ OldPass + OldPassTy, Toast.LENGTH_SHORT).show();
-                    }
+                UpdatePasswordModel updateModel = new UpdatePasswordModel(OldPassTy, OldPass, NewPass, ReNewPass);
+
+
+                UpdatePass updatePass = new UpdatePass(EditPassActivity.this, database, updateModel, idPengguna);
+                int resultProcess = updatePass.processUpdatePass();
+
+                if(resultProcess == 1){
+                    finish();
                 }
             }
         });
 
     }
+
 }

@@ -57,6 +57,7 @@ public class EditProfilActivity extends AppCompatActivity {
                 String newEmail = etEmail.getText().toString().trim();
                 String newAlamat = etAlamat.getText().toString().trim();
                 String newTelp = etTelp.getText().toString().trim();
+
                 database.daoHewan().updatePengguna(idPengguna,newNama,newEmail,newAlamat,newTelp);
                 Toast.makeText(EditProfilActivity.this, "Profil Berhasil Diubah!",Toast.LENGTH_SHORT).show();
                 finish();
