@@ -20,7 +20,7 @@ public class ProfilActivity extends AppCompatActivity {
     TextView tvNama, tvEmail, tvAlamat, tvTelp;
     private DatabaseHewan database;
     List<TabelPengguna> dataPengguna = new ArrayList<>();
-    Button btnEdit;
+    Button btnEdit, btnChgPass;
     int idPengguna;
 
     @Override
@@ -33,6 +33,7 @@ public class ProfilActivity extends AppCompatActivity {
         tvAlamat    = findViewById(R.id.textViewAlamat);
         tvTelp      = findViewById(R.id.textViewTelp);
         btnEdit     = findViewById(R.id.buttonEdit);
+        btnChgPass  = findViewById(R.id.buttonResetPass);
 
         SessionManagement session = new SessionManagement(this);
         idPengguna = session.getId();
@@ -42,11 +43,18 @@ public class ProfilActivity extends AppCompatActivity {
         btnEdit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ProfilActivity.this, EditProfilActivity.class);
-                startActivity(intent);
+                Intent intentProf = new Intent(ProfilActivity.this, EditProfilActivity.class);
+                startActivity(intentProf);
             }
         });
 
+        btnChgPass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentPass = new Intent(ProfilActivity.this, EditPassActivity.class);
+                startActivity(intentPass);
+            }
+        });
     }
 
     @Override

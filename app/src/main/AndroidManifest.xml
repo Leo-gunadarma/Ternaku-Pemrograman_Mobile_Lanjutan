@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ternaku">
         <activity
+            android:name=".EditPassActivity"
+            android:exported="false" />
+        <activity
             android:name=".EditProfilActivity"
             android:exported="false" />
         <activity
