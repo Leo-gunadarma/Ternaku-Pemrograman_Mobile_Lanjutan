@@ -37,7 +37,6 @@ public class KelolaHewanActivity extends AppCompatActivity {
 
         showData();
 
-
         addButton = findViewById(R.id.addButtonHewan);
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override

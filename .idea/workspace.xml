@@ -12,20 +12,34 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cb0608e-a86c-46a1-8341-92971d5fdf5e" name="Default Changelist" comment="Change Password">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/UpdatePass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/model/UpdatePasswordModel.java" afterDir="false" />
+    <list default="true" id="5cb0608e-a86c-46a1-8341-92971d5fdf5e" name="Default Changelist" comment="Ubah Struktur Change Pass">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/EditPassActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/EditPassActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/EditProfilActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/EditProfilActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaHewanActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaHewanActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaHewanAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaHewanAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaKandangAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaKandangAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaObatAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/KelolaObatAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/leo/ternaku/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/input_box.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/input_box.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail_hewan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail_hewan.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail_obat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail_obat.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_pass.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_pass.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_profil.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_profil.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_profil.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_profil.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tambah_hewan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tambah_hewan.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tambah_kandang.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tambah_kandang.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tambah_obat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tambah_obat.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[5cfb45d]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -64,8 +78,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="android-custom-viewC:/Users/adidh/AppData/Local/Android/Sdk/sources/android-31/android/widget/TextView.java_SELECTED" value="TextView" />
+    <property name="android-custom-viewC:/Users/adidh/AppData/Local/Android/Sdk/sources/android-31/android/widget/TextView.java_TextView_DIMENSIONS" value="1080&#10;1920" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Praktikum_Progmob/DIYZONE" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.-1416375261">
@@ -251,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640013756577</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Ubah Struktur Change Pass">
+      <created>1640019987914</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1640019987914</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -279,6 +302,7 @@
     <MESSAGE value="Memperbaiki Bug Aplikasi" />
     <MESSAGE value="Update Pengaturan Profile" />
     <MESSAGE value="Change Password" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change Password" />
+    <MESSAGE value="Ubah Struktur Change Pass" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ubah Struktur Change Pass" />
   </component>
 </project>

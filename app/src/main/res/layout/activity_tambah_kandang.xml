@@ -10,10 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
+        android:layout_margin="20dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,12 +20,13 @@
         <TextView
             android:id="@+id/textViewJudulFormTambahKandang"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/aclonica"
             android:gravity="center"
             android:text="@string/judul_form_tambahkan_kandang"
             android:textColor="@color/tema_aplikasi"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -139,7 +137,7 @@
             android:id="@+id/buttonSimpan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="30dp"
             android:text="@string/simpan"
             app:icon="@drawable/ic_simpan"
             app:iconGravity="textEnd" />

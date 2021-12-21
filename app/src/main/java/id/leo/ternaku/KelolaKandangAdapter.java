@@ -46,13 +46,7 @@ public class KelolaKandangAdapter  extends RecyclerView.Adapter<KelolaKandangAda
         holder.edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent edit = new Intent(context,TambahKandangActivity.class);
-                edit.putExtra("id_kandang",""+dataKandang.get(position).getId());
-                edit.putExtra("nama_kandang", dataKandang.get(position).getNamaKandang());
-                edit.putExtra("lokasi_kandang", dataKandang.get(position).getLokasiKandang());
-                edit.putExtra("luas_kandang", ""+ dataKandang.get(position).getLuasKandang());
-                edit.putExtra("kapasitas_kandang", ""+dataKandang.get(position).getKapasitasKandang());
-                context.startActivity(edit);
+                passData(position,TambahKandangActivity.class);
             }
         });
 
@@ -87,12 +81,7 @@ public class KelolaKandangAdapter  extends RecyclerView.Adapter<KelolaKandangAda
         holder.detail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent detail = new Intent(context,DetailKandangActivity.class);
-                detail.putExtra("nama_kandang", dataKandang.get(position).getNamaKandang());
-                detail.putExtra("lokasi_kandang", dataKandang.get(position).getLokasiKandang());
-                detail.putExtra("luas_kandang", ""+ dataKandang.get(position).getLuasKandang()+" Meter Persegi");
-                detail.putExtra("kapasitas_kandang", ""+dataKandang.get(position).getKapasitasKandang()+" Ekor");
-                context.startActivity(detail);
+                passData(position,DetailKandangActivity.class);
             }
         });
 
@@ -115,5 +104,15 @@ public class KelolaKandangAdapter  extends RecyclerView.Adapter<KelolaKandangAda
             delete = itemView.findViewById(R.id.imageViewDeleteKandang);
             detail = itemView.findViewById(R.id.imageViewDetailKandang);
         }
+    }
+
+    public void passData (int position, Class loc){
+        Intent detail = new Intent(context,loc);
+        detail.putExtra("id_kandang",""+dataKandang.get(position).getId());
+        detail.putExtra("nama_kandang", dataKandang.get(position).getNamaKandang());
+        detail.putExtra("lokasi_kandang", dataKandang.get(position).getLokasiKandang());
+        detail.putExtra("luas_kandang", ""+ dataKandang.get(position).getLuasKandang());
+        detail.putExtra("kapasitas_kandang", ""+dataKandang.get(position).getKapasitasKandang());
+        context.startActivity(detail);
     }
 }

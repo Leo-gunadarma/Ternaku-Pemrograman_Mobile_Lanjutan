@@ -7,9 +7,9 @@
     <string name="email">Email :</string>
     <string name="password">Password :</string>
     <string name="nama">Nama :</string>
-    <string name="hint_email">Masukan Email Anda</string>
-    <string name="hint_password">Masukan Password Anda</string>
-    <string name="hint_nama">Masukan Nama Anda</string>
+    <string name="hint_email">Masukan Email</string>
+    <string name="hint_password">Masukan Password</string>
+    <string name="hint_nama">Masukan Nama</string>
     <string name="menu_kelola_hewan">Kelola Hewan Ternak</string>
     <string name="judul_form_tambahkan_hewan">Form Tambahkan Hewan Ternak</string>
     <string name="nama_hewan">Nama Hewan :</string>
@@ -17,9 +17,9 @@
     <string name="ras_hewan">Ras Hewan :</string>
     <string name="hint_ras_hewan">Contoh: Boiler,Angus,dll</string>
     <string name="jenis_hewan">Jenis Hewan:</string>
-    <string name="jumlah_hewan">Jumlah Hewan</string>
+    <string name="jumlah_hewan">Jumlah Hewan:</string>
     <string name="hint_jumlah_hewan">Contoh: 10</string>
-    <string name="jadwal_makan">Jadwal Makan</string>
+    <string name="jadwal_makan">Jadwal Makan:</string>
     <string name="simpan">Simpan</string>
     <string name="menu_kelola_kandang">Kelola Kandang</string>
     <string name="menu_kelola_obat">Kelola Obat-obatan</string>
@@ -45,7 +45,7 @@
     <string name="jumlah_obat">Jumlah Obat:</string>
     <string name="alamat">Alamat</string>
     <string name="no_telp">No Telp</string>
-    <string name="hint_alamat">Masukan Alamat Anda</string>
+    <string name="hint_alamat">Masukan Alamat</string>
     <string name="hint_no_telp">08xxxxxxxxxx</string>
     <string-array name="jenis_hewan">
         <item>Jenis Hewan</item>

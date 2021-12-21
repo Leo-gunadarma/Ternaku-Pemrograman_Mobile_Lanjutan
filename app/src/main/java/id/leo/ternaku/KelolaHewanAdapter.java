@@ -48,27 +48,14 @@ public class KelolaHewanAdapter extends RecyclerView.Adapter<KelolaHewanAdapter.
         holder.edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent edit = new Intent(context,TambahHewanActivity.class);
-                edit.putExtra("id_hewan",""+dataHewan.get(position).getId());
-                edit.putExtra("nama_hewan", dataHewan.get(position).getNamaHewan());
-                edit.putExtra("jumlah_hewan", ""+ dataHewan.get(position).getJumlahHewan());
-                edit.putExtra("ras_hewan", dataHewan.get(position).getRasHewan());
-                edit.putExtra("jenis_hewan", dataHewan.get(position).getJenisHewan());
-                edit.putExtra("jadwal_makan", dataHewan.get(position).getJadwalMakan());
-                context.startActivity(edit);
+                passData(position,TambahHewanActivity.class);
             }
         });
 
         holder.detail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent detail = new Intent(context,DetailHewanActivity.class);
-                detail.putExtra("nama_hewan", dataHewan.get(position).getNamaHewan());
-                detail.putExtra("jumlah_hewan", ""+ dataHewan.get(position).getJumlahHewan());
-                detail.putExtra("ras_hewan", dataHewan.get(position).getRasHewan());
-                detail.putExtra("jenis_hewan", dataHewan.get(position).getJenisHewan());
-                detail.putExtra("jadwal_makan", dataHewan.get(position).getJadwalMakan());
-                context.startActivity(detail);
+                passData(position,DetailHewanActivity.class);
             }
         });
 
@@ -119,5 +106,16 @@ public class KelolaHewanAdapter extends RecyclerView.Adapter<KelolaHewanAdapter.
             detail = itemView.findViewById(R.id.imageViewDetailHewan);
 
         }
+    }
+
+    public void passData (int position, Class loc){
+        Intent detail = new Intent(context,loc);
+        detail.putExtra("id_hewan",""+dataHewan.get(position).getId());
+        detail.putExtra("nama_hewan", dataHewan.get(position).getNamaHewan());
+        detail.putExtra("jumlah_hewan", ""+ dataHewan.get(position).getJumlahHewan());
+        detail.putExtra("ras_hewan", dataHewan.get(position).getRasHewan());
+        detail.putExtra("jenis_hewan", dataHewan.get(position).getJenisHewan());
+        detail.putExtra("jadwal_makan", dataHewan.get(position).getJadwalMakan());
+        context.startActivity(detail);
     }
 }

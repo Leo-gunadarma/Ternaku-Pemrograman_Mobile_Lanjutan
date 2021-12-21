@@ -96,12 +96,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/amaranth"
+                android:justificationMode="inter_word"
                 android:paddingStart="16dp"
                 android:paddingEnd="10dp"
                 android:text="@string/tes"
-                android:justificationMode="inter_word"
                 android:textColor="@color/tema_aplikasi3"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textViewDetailDeskripsiObat" />
 

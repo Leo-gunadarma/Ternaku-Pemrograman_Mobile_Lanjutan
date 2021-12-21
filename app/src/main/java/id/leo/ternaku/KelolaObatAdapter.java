@@ -48,22 +48,13 @@ public class KelolaObatAdapter extends RecyclerView.Adapter<KelolaObatAdapter.vi
         holder.detail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent detail = new Intent(context, DetailObatActivity.class);
-                detail.putExtra("nama_obat", dataObat.get(position).getNamaObat());
-                detail.putExtra("jumlah_obat", ""+ dataObat.get(position).getJumlahObat());
-                detail.putExtra("deskripsi_obat", dataObat.get(position).getDeskripsiObat());
-                context.startActivity(detail);
+                passData(position,DetailObatActivity.class);
             }
         });
         holder.edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent edit = new Intent(context,TambahObatActivity.class);
-                edit.putExtra("id_obat", ""+dataObat.get(position).getId());
-                edit.putExtra("nama_obat", dataObat.get(position).getNamaObat());
-                edit.putExtra("jumlah_obat", ""+ dataObat.get(position).getJumlahObat());
-                edit.putExtra("deskripsi_obat", dataObat.get(position).getDeskripsiObat());
-                context.startActivity(edit);
+                passData(position,TambahObatActivity.class);
             }
         });
         holder.delete.setOnClickListener(new View.OnClickListener() {
@@ -112,5 +103,14 @@ public class KelolaObatAdapter extends RecyclerView.Adapter<KelolaObatAdapter.vi
             delete = itemView.findViewById(R.id.imageViewDeleteObat);
             detail = itemView.findViewById(R.id.imageViewDetailObat);
         }
+    }
+
+    public void passData (int position, Class loc){
+        Intent detail = new Intent(context,loc);
+        detail.putExtra("id_obat", ""+dataObat.get(position).getId());
+        detail.putExtra("nama_obat", dataObat.get(position).getNamaObat());
+        detail.putExtra("jumlah_obat", ""+ dataObat.get(position).getJumlahObat());
+        detail.putExtra("deskripsi_obat", dataObat.get(position).getDeskripsiObat());
+        context.startActivity(detail);
     }
 }
